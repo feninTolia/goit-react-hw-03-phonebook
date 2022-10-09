@@ -11,10 +11,7 @@ export default class App extends Component {
 
   componentDidMount() {
     const lsContacts = localStorage.getItem('contacts');
-    console.log(lsContacts);
     const parsedLsContacts = JSON.parse(lsContacts);
-
-    console.log(parsedLsContacts);
 
     if (parsedLsContacts) {
       this.setState({ contacts: parsedLsContacts });

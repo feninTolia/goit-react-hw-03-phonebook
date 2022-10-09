@@ -7,7 +7,7 @@ export default class ContactList extends Component {
 
     return (
       <ul>
-        {(filter || contacts).map(({ id, name, number }) => (
+        {(filter || contacts)?.map(({ id, name, number }) => (
           <ContactItem
             key={id}
             name={name}
